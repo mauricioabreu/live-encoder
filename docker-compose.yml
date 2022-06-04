@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8080:8080"
+    command: ["rails", "server", "-b", "0.0.0.0:8080"]
+    volumes:
+      - .:/app
